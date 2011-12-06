@@ -1,0 +1,4 @@
+This style is a modified version of 
+the "Simplified Light" theme developed for Textual, which in-turn is a modified and stripped down version of "Simplified" by "Cowboy" Ben Alman
+(http://benalman.com/).
+

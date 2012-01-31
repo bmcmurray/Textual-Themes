@@ -375,7 +375,7 @@ body .inline_nickname[colornumber='24'] {
 
 body .sender[type=normal][colornumber='25'], 
 body .inline_nickname[colornumber='25'] { 
-	color: #FFFFCC; /* eggshell white */
+	color: #7F7F66; /* dark eggshell white */
 }
 
 body .sender[type=normal][colornumber='26'], 

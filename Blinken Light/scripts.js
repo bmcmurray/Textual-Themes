@@ -17,7 +17,9 @@ Textual.newMessagePostedToDisplay = function(lineNumber) {
     var that = jQuery(this);
     jQuery(this).parent('a').unbind('click dblClick')
       .click(function() {
-        that.fadeToggle(500);
+        that.fadeToggle(500, function() {
+          jQuery(this).remove();
+        });
         return false;
       });
   });

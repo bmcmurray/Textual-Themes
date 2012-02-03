@@ -19,9 +19,6 @@ Textual.newMessagePostedToDisplay = function(lineNumber) {
       .click(function() {
         that.fadeToggle(500);
         return false;
-      })
-      .dblClick(function() {
-        window.open(jQuery(this).attr('href'));
       });
   });
 }

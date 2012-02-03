@@ -1,6 +1,6 @@
 // Mechanism to pull in additional CSS or JavaScript files
 
-// Textual.include_js("jquery.min.js");
+Textual.include_js("jquery-1.7.1.min.js");
 // Textual.include_css("more_theme.css");
 
 
@@ -11,6 +11,20 @@
 //		var newLine = document.getElementById("line" + lineNumber);
 // }
 
+// Hide all the gifs, on click.
+Textual.newMessagePostedToDisplay = function(lineNumber) {
+  jQuery('img').each(function() {
+    var that = jQuery(this);
+    jQuery(this).parent('a').unbind('click dblClick')
+      .click(function() {
+        that.fadeToggle(500);
+        return false;
+      })
+      .dblClick(function() {
+        window.open(jQuery(this).attr('href'));
+      });
+  });
+}
 
 // Functions called for contextual menus used within WebView
 // DO NOT change without knowledge of what to do. 
